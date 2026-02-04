@@ -5,6 +5,7 @@
     "dotenv": "https://deno.land/std@0.220.0/dotenv/mod.ts",
     "langchain": "npm:/langchain@0.1.28",
     "langchain/": "npm:/langchain@0.1.28/",
+    "@langchain/community/": "npm:/@langchain/community@0.2.1/",
     "@langchain/openai": "npm:/@langchain/openai@0.0.22",
     "@langchain/openai/": "npm:/@langchain/openai@0.0.22/",
     "@langchain/core": "npm:/@langchain/core@0.1.48",
@@ -14,8 +15,5 @@
     "start": "deno run --allow-net --allow-read --allow-env app.ts",
     "dev": "deno run --watch --allow-net --allow-read --allow-env app.ts"
   },
-  "deno.enable": true,
-  "compilerOptions": {
-    "lib": ["deno.ns", "dom", "es2022"]
-  }
+  "deno.enable": true
 }
