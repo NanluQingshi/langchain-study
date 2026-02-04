@@ -1,0 +1,21 @@
+{
+  "imports": {
+    "lodash": "npm:lodash",
+    "ollama": "npm:ollama",
+    "dotenv": "https://deno.land/std@0.220.0/dotenv/mod.ts",
+    "langchain": "npm:/langchain@0.1.28",
+    "langchain/": "npm:/langchain@0.1.28/",
+    "@langchain/openai": "npm:/@langchain/openai@0.0.22",
+    "@langchain/openai/": "npm:/@langchain/openai@0.0.22/",
+    "@langchain/core": "npm:/@langchain/core@0.1.48",
+    "@langchain/core/": "npm:/@langchain/core@0.1.48/"
+  },
+  "tasks": {
+    "start": "deno run --allow-net --allow-read --allow-env app.ts",
+    "dev": "deno run --watch --allow-net --allow-read --allow-env app.ts"
+  },
+  "deno.enable": true,
+  "compilerOptions": {
+    "lib": ["deno.ns", "dom", "es2022"]
+  }
+}

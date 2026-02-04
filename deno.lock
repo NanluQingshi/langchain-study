@@ -1,0 +1,30 @@
+{
+  "version": "5",
+  "specifiers": {
+    "npm:lodash@*": "4.17.23",
+    "npm:ollama@*": "0.6.3"
+  },
+  "npm": {
+    "lodash@4.17.23": {
+      "integrity": "sha512-LgVTMpQtIopCi79SJeDiP0TfWi5CNEc/L/aRdTh3yIvmZXTnheWpKjSZhnvMl8iXbC1tFg9gdHHDMLoV7CnG+w==",
+      "tarball": "https://registry.npmmirror.com/lodash/-/lodash-4.17.23.tgz"
+    },
+    "ollama@0.6.3": {
+      "integrity": "sha512-KEWEhIqE5wtfzEIZbDCLH51VFZ6Z3ZSa6sIOg/E/tBV8S51flyqBOXi+bRxlOYKDf8i327zG9eSTb8IJxvm3Zg==",
+      "dependencies": [
+        "whatwg-fetch"
+      ],
+      "tarball": "https://registry.npmmirror.com/ollama/-/ollama-0.6.3.tgz"
+    },
+    "whatwg-fetch@3.6.20": {
+      "integrity": "sha512-EqhiFU6daOA8kpjOWTL0olhVOF3i7OrFzSYiGsEMB8GcXS+RrzauAERX65xMeNWVqxA6HXH2m69Z9LaKKdisfg==",
+      "tarball": "https://registry.npmmirror.com/whatwg-fetch/-/whatwg-fetch-3.6.20.tgz"
+    }
+  },
+  "workspace": {
+    "dependencies": [
+      "npm:lodash@*",
+      "npm:ollama@*"
+    ]
+  }
+}
