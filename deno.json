@@ -10,7 +10,10 @@
     "@langchain/openai/": "npm:/@langchain/openai@0.0.22/",
     "@langchain/core": "npm:/@langchain/core@0.1.48",
     "@langchain/core/": "npm:/@langchain/core@0.1.48/",
-    "zod": "npm:/zod"
+    "zod": "npm:/zod",
+    "pdf-parse": "npm:pdf-parse@^1.1.1",
+    "ignore": "npm:/ignore",
+    "cheerio": "npm:/cheerio"
   },
   "tasks": {
     "start": "deno run --allow-net --allow-read --allow-env app.ts",
