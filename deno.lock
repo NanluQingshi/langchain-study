@@ -1,6 +1,7 @@
 {
   "version": "5",
   "specifiers": {
+    "npm:@langchain/community@0.2.1": "0.2.1_cheerio@1.2.0_ignore@7.0.5_pdf-parse@1.1.4_zod@3.25.76",
     "npm:cheerio@*": "1.2.0",
     "npm:ignore@*": "7.0.5",
     "npm:langchain@0.1.28": "0.1.28_cheerio@1.2.0_ignore@7.0.5_pdf-parse@1.1.4_zod@3.25.76",
@@ -26,7 +27,7 @@
       "integrity": "sha512-tib4UJNkyA4TPNsTNChiBtZmThVJBr7X/iooSmKeCr+yUEha2Yxly3A4OAO95Vlpj4Q+od8HAfCbZih/1XqAMw==",
       "dependencies": [
         "@langchain/core@0.1.63_zod@3.25.76",
-        "@langchain/openai",
+        "@langchain/openai@0.0.34_zod@3.25.76_openai@4.104.0__zod@3.25.76",
         "expr-eval",
         "flat",
         "langsmith",
@@ -36,23 +37,30 @@
       ],
       "tarball": "https://registry.npmmirror.com/@langchain/community/-/community-0.0.57.tgz"
     },
-    "@langchain/core@0.1.63_openai@4.104.0__zod@3.25.76_zod@3.25.76": {
-      "integrity": "sha512-+fjyYi8wy6x1P+Ee1RWfIIEyxd9Ee9jksEwvrggPwwI/p45kIDTdYTblXsM13y4mNWTiACyLSdbwnPaxxdoz+w==",
+    "@langchain/community@0.2.1_cheerio@1.2.0_ignore@7.0.5_pdf-parse@1.1.4_zod@3.25.76": {
+      "integrity": "sha512-kvCk6cSQ1tSnYOV4iaDbkvKNUVS29ehjRFAsUYMPrEybOMfr4V/yrr14xsd7bpIf2mYSmoTE86y4cVcAcki95A==",
       "dependencies": [
-        "ansi-styles",
-        "camelcase",
-        "decamelize",
-        "js-tiktoken",
+        "@langchain/core@0.2.36_zod@3.25.76",
+        "@langchain/openai@0.0.34_zod@3.25.76_openai@4.104.0__zod@3.25.76",
+        "binary-extensions",
+        "cheerio",
+        "expr-eval",
+        "flat",
+        "ignore",
+        "js-yaml",
+        "langchain@0.2.20_cheerio@1.2.0_ignore@7.0.5_pdf-parse@1.1.4_zod@3.25.76",
         "langsmith",
-        "ml-distance",
-        "mustache",
-        "p-queue",
-        "p-retry",
+        "pdf-parse",
         "uuid@9.0.1",
         "zod",
         "zod-to-json-schema"
       ],
-      "tarball": "https://registry.npmmirror.com/@langchain/core/-/core-0.1.63.tgz"
+      "optionalPeers": [
+        "cheerio",
+        "ignore",
+        "pdf-parse"
+      ],
+      "tarball": "https://registry.npmmirror.com/@langchain/community/-/community-0.2.1.tgz"
     },
     "@langchain/core@0.1.63_zod@3.25.76": {
       "integrity": "sha512-+fjyYi8wy6x1P+Ee1RWfIIEyxd9Ee9jksEwvrggPwwI/p45kIDTdYTblXsM13y4mNWTiACyLSdbwnPaxxdoz+w==",
@@ -72,16 +80,69 @@
       ],
       "tarball": "https://registry.npmmirror.com/@langchain/core/-/core-0.1.63.tgz"
     },
+    "@langchain/core@0.2.36_openai@4.104.0__zod@3.25.76_zod@3.25.76": {
+      "integrity": "sha512-qHLvScqERDeH7y2cLuJaSAlMwg3f/3Oc9nayRSXRU2UuaK/SOhI42cxiPLj1FnuHJSmN0rBQFkrLx02gI4mcVg==",
+      "dependencies": [
+        "ansi-styles",
+        "camelcase",
+        "decamelize",
+        "js-tiktoken",
+        "langsmith",
+        "mustache",
+        "p-queue",
+        "p-retry",
+        "uuid@10.0.0",
+        "zod",
+        "zod-to-json-schema"
+      ],
+      "tarball": "https://registry.npmmirror.com/@langchain/core/-/core-0.2.36.tgz"
+    },
+    "@langchain/core@0.2.36_zod@3.25.76": {
+      "integrity": "sha512-qHLvScqERDeH7y2cLuJaSAlMwg3f/3Oc9nayRSXRU2UuaK/SOhI42cxiPLj1FnuHJSmN0rBQFkrLx02gI4mcVg==",
+      "dependencies": [
+        "ansi-styles",
+        "camelcase",
+        "decamelize",
+        "js-tiktoken",
+        "langsmith",
+        "mustache",
+        "p-queue",
+        "p-retry",
+        "uuid@10.0.0",
+        "zod",
+        "zod-to-json-schema"
+      ],
+      "tarball": "https://registry.npmmirror.com/@langchain/core/-/core-0.2.36.tgz"
+    },
     "@langchain/openai@0.0.34_zod@3.25.76_openai@4.104.0__zod@3.25.76": {
       "integrity": "sha512-M+CW4oXle5fdoz2T2SwdOef8pl3/1XmUx1vjn2mXUVM/128aO0l23FMF0SNBsAbRV6P+p/TuzjodchJbi0Ht/A==",
       "dependencies": [
-        "@langchain/core@0.1.63_openai@4.104.0__zod@3.25.76_zod@3.25.76",
+        "@langchain/core@0.2.36_openai@4.104.0__zod@3.25.76_zod@3.25.76",
         "js-tiktoken",
         "openai",
         "zod",
         "zod-to-json-schema"
       ],
       "tarball": "https://registry.npmmirror.com/@langchain/openai/-/openai-0.0.34.tgz"
+    },
+    "@langchain/openai@0.2.11_zod@3.25.76_openai@4.104.0__zod@3.25.76": {
+      "integrity": "sha512-Pu8+WfJojCgSf0bAsXb4AjqvcDyAWyoEB1AoCRNACgEnBWZuitz3hLwCo9I+6hAbeg3QJ37g82yKcmvKAg1feg==",
+      "dependencies": [
+        "@langchain/core@0.2.36_openai@4.104.0__zod@3.25.76_zod@3.25.76",
+        "js-tiktoken",
+        "openai",
+        "zod",
+        "zod-to-json-schema"
+      ],
+      "tarball": "https://registry.npmmirror.com/@langchain/openai/-/openai-0.2.11.tgz"
+    },
+    "@langchain/textsplitters@0.0.3": {
+      "integrity": "sha512-cXWgKE3sdWLSqAa8ykbCcUsUF1Kyr5J3HOWYGuobhPEycXW4WI++d5DhzdpL238mzoEXTi90VqfSCra37l5YqA==",
+      "dependencies": [
+        "@langchain/core@0.2.36_zod@3.25.76",
+        "js-tiktoken"
+      ],
+      "tarball": "https://registry.npmmirror.com/@langchain/textsplitters/-/textsplitters-0.0.3.tgz"
     },
     "@types/node-fetch@2.6.13": {
       "integrity": "sha512-QGpRVpzSaUs30JBSGPjOg4Uveu384erbHBoT1zeONvyCfwQxIkUshLAOqN/k9EjGviPRmWTTe6aH2qySWKTVSw==",
@@ -475,9 +536,9 @@
       "integrity": "sha512-LNuILtOSFptfOqDwUwQAl7B0dYrBtxzVZ6lDhc5DA8rk+pyTCy12HQO7t8bGqC8oQlEPYPKaom8VRlvfupUBTw==",
       "dependencies": [
         "@anthropic-ai/sdk",
-        "@langchain/community",
+        "@langchain/community@0.0.57_zod@3.25.76",
         "@langchain/core@0.1.63_zod@3.25.76",
-        "@langchain/openai",
+        "@langchain/openai@0.0.34_zod@3.25.76_openai@4.104.0__zod@3.25.76",
         "binary-extensions",
         "cheerio",
         "expr-eval",
@@ -502,6 +563,34 @@
         "pdf-parse"
       ],
       "tarball": "https://registry.npmmirror.com/langchain/-/langchain-0.1.28.tgz"
+    },
+    "langchain@0.2.20_cheerio@1.2.0_ignore@7.0.5_pdf-parse@1.1.4_zod@3.25.76": {
+      "integrity": "sha512-tbels6Rr524iMM3VOQ4aTGnEOOjAA1BQuBR8u/8gJ2yT48lMtIQRAN32Y4KVjKK+hEWxHHlmLBrtgLpTphFjNA==",
+      "dependencies": [
+        "@langchain/core@0.2.36_zod@3.25.76",
+        "@langchain/openai@0.2.11_zod@3.25.76_openai@4.104.0__zod@3.25.76",
+        "@langchain/textsplitters",
+        "binary-extensions",
+        "cheerio",
+        "ignore",
+        "js-tiktoken",
+        "js-yaml",
+        "jsonpointer",
+        "langsmith",
+        "openapi-types",
+        "p-retry",
+        "pdf-parse",
+        "uuid@10.0.0",
+        "yaml",
+        "zod",
+        "zod-to-json-schema"
+      ],
+      "optionalPeers": [
+        "cheerio",
+        "ignore",
+        "pdf-parse"
+      ],
+      "tarball": "https://registry.npmmirror.com/langchain/-/langchain-0.2.20.tgz"
     },
     "langchainhub@0.0.11": {
       "integrity": "sha512-WnKI4g9kU2bHQP136orXr2bcRdgz9iiTBpTN0jWt9IlScUKnJBoD0aa2HOzHURQKeQDnt2JwqVmQ6Depf5uDLQ==",
@@ -788,7 +877,6 @@
     "dependencies": [
       "npm:@langchain/community@0.2.1",
       "npm:@langchain/core@0.1.48",
-      "npm:@langchain/openai@0.0.22",
       "npm:cheerio@*",
       "npm:ignore@*",
       "npm:langchain@0.1.28",
