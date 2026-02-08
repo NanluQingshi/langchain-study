@@ -2,9 +2,10 @@ import { TextLoader } from "langchain/document_loaders/fs/text";
 import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
 import { OllamaEmbeddings } from '@langchain/community/embeddings/ollama';
 import { FaissStore } from "@langchain/community/vectorstores/faiss";
+import path from "path";
 
 const run = async () => {
-  const loader = new TextLoader("../data/kong.txt");
+  const loader = new TextLoader(path.join(__dirname, '../../data/kong.txt'));
   const docs = await loader.load();
 
   const splitter = new RecursiveCharacterTextSplitter({
@@ -24,7 +25,7 @@ const run = async () => {
     embeddings
   );
 
-  const directory = "../db/kongyiji";
+  const directory = path.join(__dirname, '../../db/kongyiji');
   const res = await vertorStore.save(directory);
   console.log('vector-store save result', res);
 };
