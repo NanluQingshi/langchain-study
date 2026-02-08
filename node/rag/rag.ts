@@ -61,7 +61,7 @@ const run = async () => {
     },
     prompt,
     model,
-    new StringOutputParser, 
+    new StringOutputParser(), 
   ]);
 
   const answer = await ragChain.invoke({
