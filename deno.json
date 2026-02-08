@@ -11,7 +11,8 @@
     "zod": "npm:/zod",
     "pdf-parse": "npm:pdf-parse@^1.1.1",
     "ignore": "npm:/ignore",
-    "cheerio": "npm:/cheerio"
+    "cheerio": "npm:/cheerio",
+    "faiss-node": "npm:/faiss-node@0.5.1"
   },
   "tasks": {
     "start": "deno run --allow-net --allow-read --allow-env app.ts",

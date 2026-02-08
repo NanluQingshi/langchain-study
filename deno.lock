@@ -2,6 +2,7 @@
   "version": "5",
   "specifiers": {
     "npm:@langchain/community@0.2.1": "0.2.1_cheerio@1.2.0_ignore@7.0.5_pdf-parse@1.1.4_zod@3.25.76",
+    "npm:@langchain/core@0.1.48": "0.1.48_zod@3.25.76",
     "npm:cheerio@*": "1.2.0",
     "npm:ignore@*": "7.0.5",
     "npm:langchain@0.1.28": "0.1.28_cheerio@1.2.0_ignore@7.0.5_pdf-parse@1.1.4_zod@3.25.76",
@@ -61,6 +62,23 @@
         "pdf-parse"
       ],
       "tarball": "https://registry.npmmirror.com/@langchain/community/-/community-0.2.1.tgz"
+    },
+    "@langchain/core@0.1.48_zod@3.25.76": {
+      "integrity": "sha512-kGggyDbaYzCIPGkzvMvm/v0+lcTy1jlX6QZ7PSzUQFYJg5JK399x3AOYIDkbbUVxBAyHRgrWlxVQXH0FW3N6Bg==",
+      "dependencies": [
+        "ansi-styles",
+        "camelcase",
+        "decamelize",
+        "js-tiktoken",
+        "langsmith",
+        "ml-distance",
+        "p-queue",
+        "p-retry",
+        "uuid@9.0.1",
+        "zod",
+        "zod-to-json-schema"
+      ],
+      "tarball": "https://registry.npmmirror.com/@langchain/core/-/core-0.1.48.tgz"
     },
     "@langchain/core@0.1.63_zod@3.25.76": {
       "integrity": "sha512-+fjyYi8wy6x1P+Ee1RWfIIEyxd9Ee9jksEwvrggPwwI/p45kIDTdYTblXsM13y4mNWTiACyLSdbwnPaxxdoz+w==",
@@ -878,6 +896,7 @@
       "npm:@langchain/community@0.2.1",
       "npm:@langchain/core@0.1.48",
       "npm:cheerio@*",
+      "npm:faiss-node@0.5.1",
       "npm:ignore@*",
       "npm:langchain@0.1.28",
       "npm:lodash@*",
