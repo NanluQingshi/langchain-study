@@ -9,7 +9,7 @@ import { ChatMessageHistory } from "langchain/stores/message/in_memory";
 import { HumanMessage, AIMessage, getBufferString } from "@langchain/core/messages";
 import { Ollama } from "@langchain/community/llms/ollama";
 import { ChatPromptTemplate, MessagesPlaceholder } from "@langchain/core/prompts";
-import { Runnable, RunnablePassthrough, RunnableSequence, RunnableWithMessageHistory } from "@langchain/core/runnables";
+import { RunnablePassthrough, RunnableSequence, RunnableWithMessageHistory } from "@langchain/core/runnables";
 import { StringOutputParser } from "@langchain/core/output_parsers";
 
 const model = new Ollama({
