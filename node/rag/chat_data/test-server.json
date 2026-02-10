@@ -1,0 +1,20 @@
+[
+  {
+    "type": "human",
+    "data": {
+      "content": "什么是球状闪电",
+      "additional_kwargs": {},
+      "response_metadata": {}
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "抱歉，但根据提供的原文内容，并没有明确提到“球状闪电”的具体定义或描述。原文中提到了大型舰队和舰载机，但没有直接提到“球状闪电”这个名称。",
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "additional_kwargs": {},
+      "response_metadata": {}
+    }
+  }
+]

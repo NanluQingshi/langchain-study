@@ -2,7 +2,7 @@
  * @Author: NanluQingshi
  * @Date: 2026-02-08 13:52:05
  * @LastEditors: NanluQingshi
- * @LastEditTime: 2026-02-08 14:48:33
+ * @LastEditTime: 2026-02-10 21:33:42
  * @Description:
  */
 import { Ollama } from "@langchain/community/llms/ollama";
@@ -12,7 +12,7 @@ import { StringOutputParser } from "@langchain/core/output_parsers";
 import { ChatPromptTemplate } from "@langchain/core/prompts";
 import { RunnableSequence } from "@langchain/core/runnables";
 
-const run = async () => {
+ const run = async () => {
   const model = new Ollama({
     model: "llama3.1:8b",
     baseUrl: "http://localhost:11434",
@@ -21,7 +21,7 @@ const run = async () => {
     model: "llama3.1:8b",
     baseUrl: "http://localhost:11434",
   });
-  const directory = "../../db/qiu";
+  const directory = "../../db/ball-lightning";
   const vectorStore = await FaissStore.load(directory, embedding);
   const retriever = vectorStore.asRetriever(2);
   // const res = await retriever.invoke(
