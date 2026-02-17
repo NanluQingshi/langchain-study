@@ -6,7 +6,9 @@
     "npm:cheerio@*": "1.2.0",
     "npm:ignore@*": "7.0.5",
     "npm:langchain@0.1.28": "0.1.28_cheerio@1.2.0_ignore@7.0.5_pdf-parse@1.1.4_zod@3.25.76",
-    "npm:pdf-parse@^1.1.1": "1.1.4"
+    "npm:pdf-parse@^1.1.1": "1.1.4",
+    "npm:zod-to-json-schema@*": "3.25.1_zod@3.25.76",
+    "npm:zod@*": "3.25.76"
   },
   "npm": {
     "@anthropic-ai/sdk@0.9.1": {
@@ -902,6 +904,7 @@
       "npm:lodash@*",
       "npm:ollama@*",
       "npm:pdf-parse@^1.1.1",
+      "npm:zod-to-json-schema@*",
       "npm:zod@*"
     ]
   }
